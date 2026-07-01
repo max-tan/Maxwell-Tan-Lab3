@@ -356,7 +356,7 @@ footer a:focus-visible {
 
 
 /* DEMO: Uncomment to see effect */
-/* @media (max-width: 640px) {
+@media (max-width: 640px) {
     .container {
         width: 95%;
     }
@@ -389,9 +389,26 @@ footer a:focus-visible {
         max-height: 420px;
         align-self: center;
     }
-} */
+}
 
 /* TODO: Add responsive design for iPads */
-/* @media (max-width: 1024px) {
+@media (min-width: 641px) and (max-width: 1024px) {
+    .container {
+        width: 95%;
+    }
 
-} */
+    nav ul {
+        width: 100%;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 0.5rem 0.75rem;
+    }
+
+    .movie-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .movie-card img {
+        height: 220px;
+    }
+}
